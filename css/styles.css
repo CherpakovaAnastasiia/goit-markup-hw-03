@@ -106,11 +106,9 @@ outline: 2px solid red;
 .header-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .header-item {
-    padding: 24px 0;
 }
 
 .header-navigation {
@@ -130,6 +128,7 @@ outline: 2px solid red;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        padding: 24px 0;
 }
 
 .header-list-link:hover,

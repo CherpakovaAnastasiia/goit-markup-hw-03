@@ -38,8 +38,12 @@ outline: 2px solid red;
 }
 
 .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
     margin: -1px;
     border: 0;
+    padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -74,6 +78,7 @@ outline: 2px solid red;
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-logo {
@@ -85,6 +90,7 @@ outline: 2px solid red;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     align-items: center;
+    margin-right: 76px;
 }
 
 .header-logo-accent {
@@ -100,12 +106,14 @@ outline: 2px solid red;
 .header-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header-navigation {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-address {
@@ -148,12 +156,11 @@ color: var(--slate);
 /*---------------HERO--------------*/
 
 .hero {
-    background-color: var(--navyblue);
+    background-color: var(--navyblue);padding: 188px 0;
 }
 
 .hero-container {
-    padding-top: 188px;
-    padding-bottom: 188px;
+    
 }
 
 .hero-title {
@@ -180,6 +187,10 @@ color: var(--slate);
     padding: 16px 32px;
     display: block;
     margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -190,9 +201,9 @@ color: var(--slate);
 /*---------------ADVANTAGES--------------*/
 
 .advantages {
-    padding-top: 120px;
-        padding-bottom: 120px;
+    padding: 120px 0;
 }
+
 
 .advantages-container {
     padding-left: 156px;
@@ -226,7 +237,7 @@ color: var(--slate);
 /*---------------POSSIBILITIES--------------*/
 
 .possibilities {
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .possibilities-container {
@@ -264,7 +275,7 @@ color: var(--slate);
 }
 
 .team-container-cards {
-    padding-bottom: 32px;
+    padding: 32px 16px;
 }
 
 .team-title {
@@ -286,6 +297,7 @@ color: var(--slate);
 .team-item {
     background-color: #FFFFFF;
     width: calc((100% - 24px*3) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {
@@ -299,6 +311,7 @@ color: var(--slate);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px
 }
 
 .team-text {
@@ -313,11 +326,10 @@ color: var(--slate);
 
 .footer {
     background-color: var(--navyblue);
+    padding: 100px 0;
 }
 
 .footer-container {
-    padding-top: 101px;
-    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -328,6 +340,8 @@ color: var(--slate);
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-accent {
@@ -345,26 +359,29 @@ color: var(--slate);
 
 /*---------------PORTFOLIO--------------*/
 
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .navigation {}
 
 .navigation-list {
     display: flex;
     flex-grow: 1;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+
 }
 
 .portfolio-container {
-    margin-bottom: 120px;
+      
+        gap: 24px;
+        flex-wrap: wrap;
+        cursor: pointer;
 }
 
-.portfolio-container-list {
-    margin-top: 96px;
-    margin-bottom: 72px;
-    gap: 24px;
-    max-width: 586px;
-    flex-wrap: wrap;
-    cursor: pointer;
-}
 
 
 .navigation-list-item {
@@ -398,9 +415,9 @@ color: var(--slate);
 
 .advantages-list {
     flex-wrap: wrap;
-    column-gap: 48px;
+    column-gap: 24px;
+    row-gap: 48px;
     display: flex;
-    gap: 24px;
 }
 
 .advantages-list-conteiner {
@@ -409,11 +426,11 @@ color: var(--slate);
 .advantages-list-item {
     display: flex;
     max-width: 360px;
-    width: calc((100% - 24px * 2) / 3);
     padding-bottom: 0px;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 48px;
+    width: calc((100% - 48px) / 3);
 }
 
 
@@ -439,8 +456,10 @@ color: var(--slate);
 
 .advantages-img-text {
     display: flex;
-    padding: 0px 16px;
     flex-direction: column;
     justify-content: center;
     align-self: stretch;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }

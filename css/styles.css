@@ -216,6 +216,7 @@ color: var(--slate);
 
 .advantages-list {
     display: flex;
+    align-content: space-between;
     gap: 24px;
 }
 

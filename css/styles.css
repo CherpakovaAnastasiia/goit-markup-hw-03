@@ -100,12 +100,13 @@ outline: 2px solid red;
 .header-container {
     display: flex;
     align-items: center;
-    gap: 332px;
+    gap: 300px;
 }
 
 .header-list {
     display: flex;
     gap: 40px;
+    margin-left: auto;
 }
 
 .header-item {
@@ -394,6 +395,8 @@ color: var(--slate);
 .navigation-text:focus {
     color: #FFFFFF;
     background-color: #404BBF;
+    border: 1px solid transparent;
+
 }
 
 .navigation-text {
